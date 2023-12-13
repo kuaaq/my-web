@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <style>
+    header {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+       /* 헤더 높이 조정 */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: transparent;
+      padding: 0px; 
+      box-sizing: border-box;
+      backdrop-filter: blur(10px);
+    }
+    .menu {
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      display: flex;
+    }
+    .menu li:last-child {
+      margin-right: 30px;
+    }
+    .logo {
+   
+      margin-bottom: 10px; /* 로고와 메뉴 버튼 사이의 간격을 10px로 조정 */
+    }
+    img.logo-image {
+      width: 750px; /* 로고 이미지 너비 조절 */
+      height: auto;
+    }
+    .menu li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 200px;
+      transition: transform 0.3s ease-in-out;
+    }
+    h1 {
+      font-size: 2em; /* 수정: h1 폰트 크기 설정 */
+    }
+    p {
+      font-size: 1em; /* 수정: p 폰트 크기 설정 */
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff; /* 원하는 배경색 설정 */
+      /* 기타 스타일링을 원하는 대로 추가 */
+    }
+    .content {
+      padding-top: 100px; /* 고정된 헤더의 높이만큼 여백 추가 */
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky">
+    <h1>
+      <img src="https://drive.google.com/uc?id=1MHaCpG2Z9JKMapKzXTLpDBaeX25TcrzC" width="10" class="logo-image">
+    </h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#"><img src="https://drive.google.com/uc?id=1fPqPiGZ1REcPb-XW6FHlPFiXTGfHfxV8" height="40" id="menu1"></a></li>
+        <li><a href="#"><img src="https://drive.google.com/uc?id=107UTnfrxI_Ab5BgtaL2JcoIfeE682bs6" height="40" id="menu2"></a></li>
+        <!-- 필요한 만큼 메뉴 항목 추가 -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg">
+    <video muted autoplay loop>
+      <source src="URL_OF_YOUR_VIDEO" type="video/mp4">
+    </video>
+    <div class="text">
+    </div>
+  </div>
+
+  <script>
+    const menu1 = document.getElementById('menu1');
+    const menu2 = document.getElementById('menu2');
+
+    menu1.addEventListener('mouseover', () => {
+      menu1.src = 'https://drive.google.com/uc?id=1ey8Lry_g-g_jnSXVlhE48yAmxMNbyJGN';
+    });
+
+    menu1.addEventListener('mouseout', () => {
+      menu1.src = 'https://drive.google.com/uc?id=1fPqPiGZ1REcPb-XW6FHlPFiXTGfHfxV8';
+    });
+
+    menu2.addEventListener('mouseover', () => {
+      menu2.src = 'https://drive.google.com/uc?id=1NjYjbB6uqCZGdkBiHZHYVD6SDvDWEyQy';
+    });
+
+    menu2.addEventListener('mouseout', () => {
+      menu2.src = 'https://drive.google.com/uc?id=107UTnfrxI_Ab5BgtaL2JcoIfeE682bs6';
+    });
+  </script>
+  <div class="bg">
+    <video muted autoplay loop>
+      <source src="https://drive.google.com/uc?id=1nx-xRUA4WMtYM2J3oDI2GIwY8RwTD55y" type="video/mp4"> 비디오 넣는 자리
+    </video>
+    </div>
+  </div>
+</body>
+</html>
